@@ -19,13 +19,7 @@
                 height: 100vh;
                 margin: 0;
             }
-            img{
-              background-color: #;
-              border-color: ;
-              outline: none;
-
-              width: 50%;
-            }
+           
             .full-height {
                 height: 100vh;
             }
