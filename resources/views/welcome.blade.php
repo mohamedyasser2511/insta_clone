@@ -4,7 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Instagram</title>
+        
+    <title>InstaGram</title>
+<link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg"/>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -19,13 +21,7 @@
                 height: 100vh;
                 margin: 0;
             }
-            img{
-              background-color: #;
-              border-color: ;
-              outline: none;
-
-              width: 50%;
-            }
+           
             .full-height {
                 height: 100vh;
             }
@@ -48,27 +44,18 @@
             .title {
                 font-size: 84px;
             }
-            .links {
-                color: #;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-
-            }
+           
             .m-b-md {
                 margin-bottom: 30px;
             }
             .link{
-              background-color: #3DD1E7;
+              
               border: 0 solid #E5E7EB;
               box-sizing: border-box;
-              color: #000000;
+              color: #636b6f;
               display: flex;
               font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-              font-size: 1rem;
+              font-size: 30px;
               font-weight: 700;
               justify-content: center;
               line-height: 1.75rem;
@@ -86,6 +73,7 @@
               user-select: none;
               -webkit-user-select: none;
               touch-action: manipulation;
+             
 
             }
         </style>
@@ -110,7 +98,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Instagram
+                    Welcome!
                 </div>
 
                 <div class="links">

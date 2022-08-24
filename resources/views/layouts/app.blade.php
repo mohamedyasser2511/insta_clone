@@ -94,7 +94,9 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Instagram') }}</title>
+    
+    <title>InstaGram</title>
+<link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg"/>
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -111,7 +113,7 @@
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
-                    <div><img class="img2" src="https://img.freepik.com/free-vector/instagram-icon_1057-2227.jpg?w=2000" style="height: 20px; border-right: 1px solid #333;" class="pr-3"></div>
+                    <div><img class="img2" src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg"  style="height: 40px; border-right: 1px solid #333;" class="pr-3"></div>
                     <div class="pl-3">Instagram</div>
                 </a>
 
