@@ -15,13 +15,15 @@ width: 80%;
          <img  src="https://img.a.transfermarkt.technology/portrait/big/148455-1546611604.jpg?lm=1" class="img3" >
       </div>
       <div class="col-9 pt-5 pl-5">
-        <div>
-          <h2>{{ Auth::user()->name }}</h2>
+        <div class="d-flex justify-content-between align-items-baseline">
+          <h2>{{$user->username }}</h2>
+           <a href="/p/create">Add new post</a>
 
         </div>
+        <a href="/profile/{{$user->id}}/edit">Edit Profile</a>
         <div class="d-flex">
           <div class="pr-4">
-            <strong>200</strong>Posts
+            <strong>{{$user->posts->count()}}</strong>Posts
           </div>
           <div class="pr-4">
             <strong>610</strong>Followers
@@ -31,13 +33,17 @@ width: 80%;
           </div>
 
         </div>
+        <div class="pt-4 font-weight-bold">
+          {{$user->profile->title}}
+
+        </div>
         <div class="pt-3">
-          <b>{{ Auth::user()->name }}</b>
+          <b>{{ $user->name}}</b>
           <br>
-          <p>21 years<p>
+          <p>{{$user->profile->description}}<p>
         </div>
         <div class="">
-          <a href="https://www.facebook.com/profile.php?id=100082679210827">My facebook</a>
+          <a href="#">{{$user->profile->url}}</a>
 
         </div>
 
@@ -45,18 +51,16 @@ width: 80%;
 
     </div>
     <div class="row pt-5">
-      <div class="col-4">
-        <img src="https://www.kingfut.com/wp-content/uploads/2021/10/Salah-1-1000x600.jpg" class="w-100" alt="">
+       @foreach($user->posts as $post)
+       <div class="col-4 pb-4">
+         <a href="/p/{{$post->id}}"><img src="/storage/{{ $post->image }}" class="w-100" alt=""></a>
 
-      </div>
-      <div class="col-4">
-        <img src="https://www.egypttoday.com/siteimages/Larg/66432.jpg" class="w-100" alt="">
 
-      </div>
-      <div class="col-4">
-        <img src="http://c.files.bbci.co.uk/11F3F/production/_122653537_mohamedsalah.jpg"class="w-100" alt="">
+       </div>
+       @endforeach
 
-      </div>
+
+
 
     </div>
 </div>

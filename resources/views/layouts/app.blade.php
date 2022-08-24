@@ -147,7 +147,7 @@
 
 
                                 <div class="name1">
-                                  {{ Auth::user()->name }} <span class="caret"></span>
+                                  {{ Auth::user()->username }} <span class="caret"></span>
                                 </div>
 
                                  <form action="{{ route('logout') }}" method="post">

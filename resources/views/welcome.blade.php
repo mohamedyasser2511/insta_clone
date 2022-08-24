@@ -19,7 +19,13 @@
                 height: 100vh;
                 margin: 0;
             }
-           
+            img{
+              background-color: #;
+              border-color: ;
+              outline: none;
+
+              width: 50%;
+            }
             .full-height {
                 height: 100vh;
             }
@@ -43,7 +49,7 @@
                 font-size: 84px;
             }
             .links {
-                color: #f5f5dc;
+                color: #;
                 padding: 0 25px;
                 font-size: 13px;
                 font-weight: 600;
@@ -89,7 +95,7 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a class="link" href="{{ url('/home') }}">Home</a>
+                        <a class="link" href="{{ ('/home') }}">Home</a>
 
                     @else
                         <a class="link" href="{{ route('login') }}">Login</a>
